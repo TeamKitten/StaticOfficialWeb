@@ -31,6 +31,6 @@
   text-align: center;
   color: #707070;
   margin-top: 12px;
-  line-height: 1.5;
+  line-height: 2;
 }
 </style>

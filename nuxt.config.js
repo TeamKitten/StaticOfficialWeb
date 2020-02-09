@@ -2,7 +2,7 @@ const meta = {
   title: 'TeamKitten',
   description: '「面白い」ことをしたい人が集まるコミュニティです。',
   themeColor: '#fff',
-  url: 'https://tinykitten.me/',
+  url: 'https://teamkitten.tk/',
   twitter: '@teamkitten8'
 }
 

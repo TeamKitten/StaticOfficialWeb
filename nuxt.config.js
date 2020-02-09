@@ -1,18 +1,9 @@
-import glob from 'glob'
-
 const meta = {
   title: 'TeamKitten',
   description: '「面白い」ことをしたい人が集まるコミュニティです。',
   themeColor: '#fff',
   url: 'https://tinykitten.me/',
   twitter: '@teamkitten8'
-}
-
-const files = glob.sync('**/*.md', { cwd: './members/CURRENT' })
-
-function getSlug(post, _) {
-  const slug = post.substr(0, post.lastIndexOf('.'))
-  return `/member${slug}`
 }
 
 export default {
@@ -145,8 +136,5 @@ export default {
     background_color: '#fff',
     description: meta.description,
     lang: 'ja'
-  },
-  generate: {
-    routes: () => files.map(getSlug)
   }
 }

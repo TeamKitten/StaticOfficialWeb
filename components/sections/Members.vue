@@ -96,7 +96,7 @@ export default {
       this.modalOpen = true
     },
     excerptModalName(name) {
-      const maxCount = window.innerWidth / 15
+      const maxCount = window.innerWidth / 16
       if (name.length > maxCount) {
         return `${name.substr(0, maxCount)}...`
       }

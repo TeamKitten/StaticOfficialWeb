@@ -89,18 +89,14 @@ export default {
   methods: {
     handleMemberClick(member) {
       if (process.client) {
-        const resized = this.resizeMAR(
-          640,
-          360,
-          Math.floor(window.innerWidth)
-        )
+        const resized = this.resizeMAR(640, 360, Math.floor(window.innerWidth))
         this.resizedHeight = resized.height
       }
       this.activeMember = member
       this.modalOpen = true
     },
     excerptModalName(name) {
-      const maxCount = window.innerWidth / 16
+      const maxCount = window.innerWidth / 15
       if (name.length > maxCount) {
         return `${name.substr(0, maxCount)}...`
       }
@@ -238,9 +234,9 @@ export default {
   font-size: 1.25rem;
 }
 .modalAvatar {
-  width: 240px;
-  height: 240px;
-  margin-top: -120px;
+  width: 180px;
+  height: 180px;
+  margin-top: -90px;
 }
 .modalTexts {
   padding: 32px;
@@ -273,8 +269,10 @@ export default {
 
 /* Oppa PC Style */
 @media (min-width: 800px) {
-  .modalName {
-    font-size: 1.5rem;
+  .modalAvatar {
+    width: 240px;
+    height: 240px;
+    margin-top: -120px;
   }
 }
 </style>

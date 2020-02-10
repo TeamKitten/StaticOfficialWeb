@@ -232,6 +232,8 @@ export default {
 .modalName {
   color: #555;
   font-size: 1.25rem;
+  line-height: 32px;
+  height: 32px;
 }
 .modalAvatar {
   width: 180px;

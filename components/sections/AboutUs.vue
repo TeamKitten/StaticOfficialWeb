@@ -29,7 +29,7 @@
 }
 .text {
   text-align: center;
-  color: #707070;
+  color: #555;
   margin-top: 12px;
   line-height: 2;
 }

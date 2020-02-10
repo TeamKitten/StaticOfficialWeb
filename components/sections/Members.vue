@@ -225,7 +225,7 @@ export default {
   align-items: center;
   flex-direction: column;
   margin: 24px;
-  max-width: 240px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -275,6 +275,10 @@ export default {
     width: 240px;
     height: 240px;
     margin-top: -120px;
+  }
+
+  .member {
+    width: 240px;
   }
 }
 </style>

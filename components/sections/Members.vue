@@ -92,7 +92,7 @@ export default {
         const resized = this.resizeMAR(
           640,
           360,
-          Math.floor(window.innerWidth * 0.9)
+          Math.floor(window.innerWidth)
         )
         this.resizedHeight = resized.height
       }

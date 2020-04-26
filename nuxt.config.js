@@ -136,5 +136,8 @@ export default {
     background_color: '#fff',
     description: meta.description,
     lang: 'ja'
+  },
+  generate: {
+    fallback: true
   }
 }

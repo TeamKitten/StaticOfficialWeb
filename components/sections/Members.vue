@@ -2,7 +2,12 @@
   <section id="aboutus" class="section">
     <h1 class="title">MEMBERS</h1>
     <ul class="members">
-      <li v-for="m of members" @click="handleMemberClick(m)" class="member">
+      <li
+        v-for="m of members"
+        @click="handleMemberClick(m)"
+        :key="m.attributes.code"
+        class="member"
+      >
         <img
           :src="require(`~/members/avatar_images/${m.attributes.id}.png`)"
           :alt="m.attributes.name"
@@ -89,7 +94,7 @@ export default {
   methods: {
     handleMemberClick(member) {
       if (process.client) {
-        const resized = this.resizeMAR(640, 360, Math.floor(window.innerWidth))
+        const resized = this.resizeMAR(512, 288, Math.floor(window.innerWidth))
         this.resizedHeight = resized.height
       }
       this.activeMember = member
@@ -251,16 +256,16 @@ export default {
   flex-direction: column;
 }
 .coverImageWrapper {
-  width: 100%;
-  background: #333;
+  min-width: 100%;
+  background: #555;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 360px;
+  max-height: 288px;
 }
 .coverImage {
   width: auto;
-  max-height: 360px;
+  max-height: 288px;
   overflow: hidden;
 }
 .bio {

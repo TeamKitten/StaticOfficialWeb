@@ -35,29 +35,29 @@
     border-radius: 4px;
     overflow: hidden;
     width: 100%;
-    height 100%;
-    box-sizing border-box;
+    height: 100%;
+    box-sizing: border-box;
   }
 
   &-header {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     padding: 12px;
-    display flex;
-    justify-content space-between;
-    z-index 9999;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
     position: relative;
-    background #fff;
+    background: #fff;
     margin-top: 48px;
-    height 32px;
-    overflow hidden;
-    line-height 1.25;
+    height: 32px;
+    overflow: hidden;
+    line-height: 1.25;
   }
 
   &-close-button {
     width: auto;
-    background none;
+    background: none;
     border:none;
-    font-size 1rem;
+    font-size: 1rem;
     color: #555;
   }
 }
@@ -86,20 +86,21 @@
 /* Oppa PC Style */
 @media (min-width: 800px) {
   .modal {
+    padding-top: 24px;
     &.modal-overlay {
       background: rgba(0, 0, 0, 0.5);
     }
 
     &-window {
-      width: 640px;
-      max-width 90%;
-      height auto;
+      width: 512px;
+      max-width: 90%;
+      height: auto;
     }
 
     &-header {
       margin-top: 0;
-      padding: 24px;
-      height auto;
+      padding: 18px;
+      height: auto;
     }
 
     &-close-button {

@@ -277,13 +277,13 @@ export default {
 /* Oppa PC Style */
 @media (min-width: 800px) {
   .modalAvatar {
-    width: 240px;
-    height: 240px;
-    margin-top: -120px;
+    width: 210px;
+    height: 210px;
+    margin-top: -105px;
   }
 
   .member {
-    width: 240px;
+    width: 210px;
   }
 }
 </style>

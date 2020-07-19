@@ -5,6 +5,7 @@
     <members-section />
     <events-section />
     <projects-section />
+    <app-footer />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import AboutUsSection from '~/components/sections/AboutUs'
 import MembersSection from '~/components/sections/Members'
 import EventsSection from '~/components/sections/Events'
 import ProjectsSection from '~/components/sections/Projects'
+import AppFooter from '~/components/Footer'
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     AboutUsSection,
     MembersSection,
     EventsSection,
-    ProjectsSection
+    ProjectsSection,
+    AppFooter
   }
 }
 </script>

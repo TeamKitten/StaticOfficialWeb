@@ -1,8 +1,8 @@
 <template>
   <section id="aboutus" class="section">
     <h1 class="title">PROJECTS</h1>
-    <ul class="events">
-      <li class="event">
+    <ul class="projects">
+      <li class="project">
         <img
           class="image"
           src="~/assets/projects/blog.png"
@@ -17,6 +17,27 @@
         </p>
         <a class="link" href="https://blog.teamkitten.tk/" target="_blank"
           >読んでみる</a
+        >
+      </li>
+      <li class="project">
+        <img
+          class="image"
+          src="~/assets/projects/notenote.png"
+          alt="NoteNote"
+        />
+        <h1 class="name">NoteNote</h1>
+        <h2 class="subtitle">使いやすく、デプロイしやすいノートツール</h2>
+        <p class="state">開発中</p>
+        <p class="description">
+          A easy to use/deploy notebook system.<br />
+          オンプレ前提のノートブックプロジェクト。<br />
+          セットアップは簡単。すぐに使えます。
+        </p>
+        <a
+          class="link"
+          href="https://github.com/TeamKitten/NoteNote"
+          target="_blank"
+          >開発進捗を確認</a
         >
       </li>
     </ul>
@@ -44,15 +65,16 @@ export default {}
   text-align: center;
   margin-bottom: 48px;
 }
-.event {
+.project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 .image {
-  width: 480px;
   max-width: 90%;
+  max-height: 480px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
   margin-bottom: 32px;
   border-radius: 4px;

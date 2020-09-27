@@ -5,12 +5,12 @@
       <li class="event">
         <img
           class="image"
-          src="~/assets/events/kittenlt1.png"
-          alt="KittenLT1"
+          src="~/assets/events/kittenlt2.png"
+          alt="KittenLT2"
         />
-        <h1 class="name">KittenLT1</h1>
-        <h2 class="subtitle">面白いことは、この世にあふれている。</h2>
-        <p class="state">ご来場ありがとうございました</p>
+        <h1 class="name">KittenLT2</h1>
+        <h2 class="subtitle">面白いことは、まだこの世にあふれている。</h2>
+        <p class="state">2020年11月15日開催予定</p>
         <p class="description">
           KittenLTは、LTスタイルの勉強会です。<br />
           皆さんが気軽に話題を持ち寄って、発表できるような場を作りたい。<br />

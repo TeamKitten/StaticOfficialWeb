@@ -1,0 +1,22 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.title {
+  color: #707070;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color: #555;
+  margin-top: 12px;
+  line-height: 2;
+}

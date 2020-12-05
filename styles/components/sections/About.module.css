@@ -6,7 +6,6 @@
   flex-direction: column;
   background: #fafafa;
   padding: 32px;
-  box-sizing: border-box;
 }
 .title {
   color: #707070;

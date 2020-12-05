@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { MemberAttributes, MemberMD } from '../../models/Member';
 import styles from '../../styles/components/sections/Members.module.css';
+import MemberModal from '../MemberModal';
 
 const Members: React.FC = () => {
-  const [members, setMembers] = useState([]);
+  const [members, setMembers] = useState<MemberMD[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [
+    selectedMemberAttr,
+    setSelectedMemberAttr,
+  ] = useState<MemberAttributes | null>(null);
 
   useEffect(() => {
     const membersResolver = require.context(
@@ -13,13 +20,20 @@ const Members: React.FC = () => {
     setMembers(membersResolver.keys().map((key) => membersResolver(key)));
   }, []);
 
+  const handleMemberClick = useCallback((attr: MemberAttributes) => {
+    setSelectedMemberAttr(attr);
+    setIsModalOpen(true);
+  }, []);
+
+  const handleModalClose = () => setIsModalOpen(false);
+
   return (
     <section className={styles.section}>
       <h1 className={styles.title}>MEMBERS</h1>
       <ul className={styles.members}>
         {members.map((m) => (
           <li
-            // @click="handleMemberClick(m)"
+            onClick={() => handleMemberClick(m.attributes)}
             className={styles.member}
             key={m.attributes.code}
           >
@@ -37,6 +51,11 @@ const Members: React.FC = () => {
           </li>
         ))}
       </ul>
+      <MemberModal
+        isOpen={isModalOpen}
+        memberAttr={selectedMemberAttr}
+        onRequestClose={handleModalClose}
+      />
     </section>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/components/sections/Welcome.module.css';
-import TK from '../../assets/tinykitten.svg';
-import Arrow from '../../assets/arrow.svg';
+import TK from '../../public/tinykitten.svg';
+import Arrow from '../../public/arrow.svg';
 
 type Props = {
   onArrowPress: () => void;

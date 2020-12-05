@@ -35,7 +35,6 @@ const MemberModal: React.FC<Props> = ({
 
   useEffect(() => {
     const resized = resizeMAR(512, 288, Math.floor(window.innerWidth));
-    console.log(resized.height);
     setResizedHeight(resized.height);
   }, []);
 

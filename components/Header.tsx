@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/components/Header.module.css';
-import TK from '../assets/tinykitten.svg';
+import TK from '../public/tinykitten.svg';
 
 const LogoWithRef = React.forwardRef(() => <TK width={32} />);
 
